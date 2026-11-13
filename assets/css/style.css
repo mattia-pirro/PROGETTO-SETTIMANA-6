@@ -18,13 +18,33 @@ html {
     scroll-padding-top: 60px;
 }
 
+body.no-transition .site-header,
+body.no-transition .site-header-title {
+    transition: none !important;
+}
+
 /* Header */
 
-header {
+.site-header {
+    background-color: hsl(20, 30%, 25%);
+    transition:
+        background-color 300ms ease-out;
+}
+
+.site-header-title {
+    transition:
+        font-size 300ms ease-out;
+}
+
+.site-header.scrolled {
     background-color: hsl(20, 20%, 15%);
 }
 
-/* Studio */
+.site-header-title.scrolled {
+    font-size: 18px !important;
+}
+
+/* Carousel */
 
 #studio,
 #studio .carousel-inner,
@@ -109,12 +129,32 @@ header {
     animation-delay: 360ms;
 }
 
-.dettagli {
+/* Modal */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: hsl(20, 20%, 15%);
+}
+
+.invia {
     background-color: hsl(20, 20%, 15%);
 }
 
-.dettagli:hover {
+.invia:hover {
     background-color: hsl(20, 20%, 10%) !important;
+}
+
+.container-notifica {
+    background-color: hsla(150, 60%, 30%, 0.1);
+}
+
+.icona-notifica {
+    color: #ffffff;
+    background-color: hsl(150, 60%, 30%);
+}
+
+.notifica {
+    color: hsl(150, 60%, 30%);
 }
 
 /* Footer */

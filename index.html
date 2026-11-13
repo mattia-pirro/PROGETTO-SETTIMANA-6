@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="bg-white text-dark">
+<body>
 
-  <header class="d-flex flex-column position-sticky top-0 z-3">
+  <header class="site-header d-flex flex-column position-sticky top-0 z-3">
     <nav class="container navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="index.html">Atelier</a>
+        <a class="site-header-title navbar-brand fw-bold fs-3" href="index.html">Atelier</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinkBar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +31,7 @@
               <a class="nav-link text-start" href="#lavori">Lavori</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-start" href="#contatti">Contatti</a>
+              <a class="nav-link text-start" data-bs-toggle="modal" data-bs-target="#myModal">Contatti</a>
             </li>
           </ul>
           <button id="toggle-tema" type="button" class="btn btn-outline-light ms-md-2 my-1">Tema scuro</button>
@@ -48,9 +48,8 @@
           <h2 class="text-white fs-1 fw-bold mb-3">Architettura di spazi che parlano</h2>
           <p class="text-white fs-5">Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali
             e al contesto.</p>
-          <button type="button"
-            class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2">Inizia un
-            progetto</button>
+          <button type="button" class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2"
+            data-bs-toggle="modal" data-bs-target="#myModal">Inizia un progetto</button>
         </div>
       </div>
       <div class="second-item carousel-item h-100">
@@ -58,9 +57,8 @@
           <h2 class="text-white fs-1 fw-bold mb-3">Architettura di spazi che parlano</h2>
           <p class="text-white fs-5">Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali
             e al contesto.</p>
-          <button type="button"
-            class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2">Inizia un
-            progetto</button>
+          <button type="button" class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2"
+            data-bs-toggle="modal" data-bs-target="#myModal">Inizia un progetto</button>
         </div>
       </div>
       <div class="third-item carousel-item h-100">
@@ -68,9 +66,8 @@
           <h2 class="text-white fs-1 fw-bold mb-3">Architettura di spazi che parlano</h2>
           <p class="text-white fs-5">Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali
             e al contesto.</p>
-          <button type="button"
-            class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2">Inizia un
-            progetto</button>
+          <button type="button" class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2"
+            data-bs-toggle="modal" data-bs-target="#myModal">Inizia un progetto</button>
         </div>
       </div>
     </div>
@@ -84,9 +81,9 @@
     </button>
   </section>
 
-  <main>
+  <main class="bg-white text-dark">
     <section id="servizi"
-      class="d-flex flex-column justify-content-center align-items-center align-content-center px-5">
+      class="d-flex flex-column justify-content-center align-items-center align-content-center px-4">
       <div class="text-center mt-5 mb-4">
         <h2 class="fw-bold">I nostri servizi</h2>
         <p class="text-muted">Sei aree di lavoro, una sola attenzione alla qualità.</p>
@@ -156,7 +153,7 @@
     </section>
 
     <section id="lavori"
-      class=" bg-light d-flex flex-column justify-content-center align-items-center align-content-center px-5">
+      class=" bg-light d-flex flex-column justify-content-center align-items-center align-content-center px-4">
       <div class="text-center mt-5 mb-4">
         <h2 class="fw-bold mb-2">Progetti selezionati</h2>
         <p class="text-muted">Una selezione dei nostri lavori più recenti.</p>
@@ -169,8 +166,6 @@
               <h5 class="card-title fw-bold mb-2">Villa Litta</h5>
               <p class="card-text text-muted mb-1">Progettazione residenziale</p>
               <p class="card-text text-muted mb-1">2024</p>
-              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
-                data-bs-target="#myModal">Dettagli</button>
             </div>
           </div>
         </article>
@@ -181,8 +176,6 @@
               <h5 class="card-title fw-bold mb-2">Loft Navigli</h5>
               <p class="card-text text-muted mb-1">Interior design</p>
               <p class="card-text text-muted mb-1">2023</p>
-              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
-                data-bs-target="#myModal">Dettagli</button>
             </div>
           </div>
         </article>
@@ -193,8 +186,6 @@
               <h5 class="card-title fw-bold mb-2">Residence Stella</h5>
               <p class="card-text text-muted mb-1">Ristrutturazione</p>
               <p class="card-text text-muted mb-1">2023</p>
-              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
-                data-bs-target="#myModal">Dettagli</button>
             </div>
           </div>
         </article>
@@ -205,8 +196,6 @@
               <h5 class="card-title fw-bold mb-2">Giardino Sospeso</h5>
               <p class="card-text text-muted mb-1">Progettazione del verde</p>
               <p class="card-text text-muted mb-1">2022</p>
-              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
-                data-bs-target="#myModal">Dettagli</button>
             </div>
           </div>
         </article>
@@ -217,8 +206,6 @@
               <h5 class="card-title fw-bold mb-2">Showroom Ford</h5>
               <p class="card-text text-muted mb-1">Spazi commerciali</p>
               <p class="card-text text-muted mb-1">2024</p>
-              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
-                data-bs-target="#myModal">Dettagli</button>
             </div>
           </div>
         </article>
@@ -229,17 +216,59 @@
               <h5 class="card-title fw-bold mb-2">Residenze Lago</h5>
               <p class="card-text text-muted mb-1">Direzione lavori</p>
               <p class="card-text text-muted mb-1">2022</p>
-              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
-                data-bs-target="#myModal">Dettagli</button>
             </div>
-          </div>
         </article>
       </div>
     </section>
-
-    <section id="contatti">
-    </section>
   </main>
+
+  <div id="myModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content d-flex flex-column justify-content-center align-items-center">
+        <button type="button" class="btn-close shadow-none pt-4 pe-4 pb-0 align-self-end"
+          data-bs-dismiss="modal"></button>
+        <form id="form-contatti" class="pt-0 pb-3">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Contattaci</h2>
+            <p class="text-muted mb-0">Compila il form, ti risponderemo entro 48 ore.</p>
+          </div>
+          <div>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control text-muted shadow-none border-2" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control text-muted shadow-none border-2" required>
+            </div>
+            <div class="mb-3">
+              <label for="menu" class="form-label shadow-none">Tipo di servizio</label>
+              <select id="menu" name="menu" class="form-select text-muted shadow-none border-2" required>
+                <option value="progettazione-residenziale">Progettazione residenziale</option>
+                <option value="interior-design">Interior design</option>
+                <option value="ristrutturazione">Ristrutturazione</option>
+                <option value="progettazione-del-verde">Progettazione del verde</option>
+                <option value="spazi-commerciali">Spazi commerciali</option>
+                <option value="direzione-lavori">Direzione lavori</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="messaggio" class="form-label">Messaggio</label>
+              <textarea id="messaggio" name="messaggio" rows="5"
+                class="form-control text-muted shadow-none border-2"></textarea>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="invia text-white border-0 btn w-100 rounded mt-2 mb-3">Invia</button>
+            <div class="container-notifica d-none text-center mt-3 rounded d-flex align-items-center mb-3 p-3">
+              <p class="icona-notifica mb-0 me-2 border rounded-circle px-1 py-0 fs-6">✓</p>
+              <p class="notifica fs-5 mb-0">Grazie! Abbiamo ricevuto la tua richiesta.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <footer class="text-white py-3 position-relative bottom-0 w-100">
     <div class="container d-flex flex-column justify-content-center mt-2">
@@ -254,7 +283,7 @@
           <a href="#studio" class="footer-link text-white mb-1">Studio</a>
           <a href="#servizi" class="footer-link text-white mb-1">Servizi</a>
           <a href="#lavori" class="footer-link text-white mb-1">Lavori</a>
-          <a href="#contatti" class="footer-link text-white mb-1">Contatti</a>
+          <a class="footer-link text-white mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Contatti</a>
         </div>
         <div class="col-md-4 d-flex flex-column my-3 align-items-center align-items-md-start p-0">
           <h4 class="fs-5 fw-bold mb-2">Contatti</h4>
