@@ -3,7 +3,7 @@
 @keyframes fade-in {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
 
     to {
@@ -18,16 +18,38 @@ html {
     scroll-padding-top: 60px;
 }
 
+/* Body */
+
 body.no-transition .site-header,
-body.no-transition .site-header-title {
+body.no-transition .site-header-title,
+body.no-transition .toggle-tema:hover {
     transition: none !important;
+}
+
+body.dark .site-header,
+body.dark .site-footer,
+body.dark .site-header.scrolled,
+body.dark .invia {
+    background-color: #1e1e1e !important;
+}
+
+body.dark .invia:hover {
+    background-color: rgb(20, 20, 20) !important;
+}
+
+body.dark .form-control:focus,
+body.dark .form-select:focus {
+    background-color: #1e1e1e !important;
+    border-color: #cccccc !important;
 }
 
 /* Header */
 
 .site-header {
+    padding: 18px 0;
     background-color: hsl(20, 30%, 25%);
     transition:
+        padding 300ms ease-out,
         background-color 300ms ease-out;
 }
 
@@ -37,11 +59,22 @@ body.no-transition .site-header-title {
 }
 
 .site-header.scrolled {
+    padding: 4px 0 !important;
     background-color: hsl(20, 20%, 15%);
 }
 
 .site-header-title.scrolled {
     font-size: 18px !important;
+}
+
+.toggle-tema:hover {
+    color: hsl(20, 30%, 25%) !important;
+    transition:
+        color 300ms ease-out !important;
+}
+
+.toggle-tema.scrolled:hover {
+    color: hsl(20, 20%, 15%) !important;
 }
 
 /* Carousel */
@@ -69,7 +102,7 @@ body.no-transition .site-header-title {
 
 .third-item,
 .third-item .apri-contatti {
-    background-color: rgb(20, 23, 26);
+    background-color: rgb(33, 37, 41);
 }
 
 .first-item .apri-contatti:hover {
@@ -83,11 +116,19 @@ body.no-transition .site-header-title {
 }
 
 .third-item .apri-contatti:hover {
-    background-color: rgb(15, 15, 15) !important;
+    background-color: rgb(20, 20, 20) !important;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Card */
+
+#lavori {
+    background-color: hsla(20, 30%, 25%, 0.2);
+}
+
+#servizi .card {
+    cursor: pointer;
+}
 
 .card-container {
     animation: fade-in 500ms ease-out;
@@ -98,11 +139,6 @@ body.no-transition .site-header-title {
     transition:
         box-shadow 300ms ease-out,
         transform 300ms ease-out;
-}
-
-.card:hover {
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
-    transform: translate(-4px);
 }
 
 .card-grid .card-container:nth-of-type(1) {
@@ -129,11 +165,27 @@ body.no-transition .site-header-title {
     animation-delay: 360ms;
 }
 
+.card:hover {
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.card.selected {
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+    border: 2px solid gold !important;
+}
+
+.filtered {
+    min-width: 300px;
+}
+
 /* Modal */
 
 .form-control:focus,
 .form-select:focus {
-    border-color: hsl(20, 20%, 15%);
+    background-color: hsla(20, 30%, 25%, 0.2) !important;
+    border-color: hsl(20, 20%, 15%) !important;
 }
 
 .invia {
@@ -149,11 +201,13 @@ body.no-transition .site-header-title {
 }
 
 .icona-notifica {
+    font-size: 12px;
     color: #ffffff;
     background-color: hsl(150, 60%, 30%);
 }
 
 .notifica {
+    font-size: 14px;
     color: hsl(150, 60%, 30%);
 }
 
