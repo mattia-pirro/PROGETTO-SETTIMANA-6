@@ -236,6 +236,7 @@ form.addEventListener('submit', e => {
 
 document.getElementById('myModal').addEventListener('hidden.bs.modal', () => {
     notifica.classList.add('d-none');
+    clearTimeout();
 });
 
 renderServizi();
