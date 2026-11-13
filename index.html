@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier — Studio di architettura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-dark">
+
+  <header class="d-flex flex-column position-sticky top-0 z-3">
+    <nav class="container navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">Atelier</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinkBar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinkBar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-start" href="#studio">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-start" href="#servizi">Servizi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-start" href="#lavori">Lavori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-start" href="#contatti">Contatti</a>
+            </li>
+          </ul>
+          <button id="toggle-tema" type="button" class="btn btn-outline-light ms-md-2 my-1">Tema scuro</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="studio" class="carousel slide carousel-light" data-bs-ride="carousel" data-bs-interval="4000"
+    style="height: 80vh;">
+    <div class="carousel-inner h-100" id="carouselInner">
+      <div class="first-item carousel-item h-100 active">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+          <h2 class="text-white fs-1 fw-bold mb-3">Architettura di spazi che parlano</h2>
+          <p class="text-white fs-5">Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali
+            e al contesto.</p>
+          <button type="button"
+            class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2">Inizia un
+            progetto</button>
+        </div>
+      </div>
+      <div class="second-item carousel-item h-100">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+          <h2 class="text-white fs-1 fw-bold mb-3">Architettura di spazi che parlano</h2>
+          <p class="text-white fs-5">Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali
+            e al contesto.</p>
+          <button type="button"
+            class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2">Inizia un
+            progetto</button>
+        </div>
+      </div>
+      <div class="third-item carousel-item h-100">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+          <h2 class="text-white fs-1 fw-bold mb-3">Architettura di spazi che parlano</h2>
+          <p class="text-white fs-5">Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali
+            e al contesto.</p>
+          <button type="button"
+            class="apri-contatti text-white btn fw-bold rounded-pill border border-white px-4 py-2">Inizia un
+            progetto</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#studio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#studio" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+  <main>
+    <section id="servizi"
+      class="d-flex flex-column justify-content-center align-items-center align-content-center px-5">
+      <div class="text-center mt-5 mb-4">
+        <h2 class="fw-bold">I nostri servizi</h2>
+        <p class="text-muted">Sei aree di lavoro, una sola attenzione alla qualità.</p>
+      </div>
+      <div class="card-grid row g-3 mb-5">
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border text-center p-2">
+            <div class="card-body">
+              <div class="display-4 mb-3">🏠</div>
+              <h5 class="card-title fw-bold">Progettazione residenziale</h5>
+              <p class="card-text text-muted">Case private, ville e ristrutturazioni domestiche, dal sopralluogo
+                alla consegna delle chiavi.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border text-center p-2">
+            <div class="card-body">
+              <div class="display-4 mb-3">🪑</div>
+              <h5 class="card-title fw-bold">Interior design</h5>
+              <p class="card-text text-muted">Allestimenti d'interno per case e uffici, con materiali selezionati e
+                arredo su misura.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border text-center p-2">
+            <div class="card-body">
+              <div class="display-4 mb-3">🧱</div>
+              <h5 class="card-title fw-bold">Ristrutturazioni</h5>
+              <p class="card-text text-muted">Riqualificazione di spazi esistenti, gestione dei lavori e
+                coordinamento con le imprese.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border text-center p-2">
+            <div class="card-body">
+              <div class="display-4 mb-3">🌳</div>
+              <h5 class="card-title fw-bold">Progettazione del verde</h5>
+              <p class="card-text text-muted">Giardini, terrazze e spazi esterni pensati per dialogare con
+                l'architettura.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border text-center p-2">
+            <div class="card-body">
+              <div class="display-4 mb-3">🏪</div>
+              <h5 class="card-title fw-bold">Spazi commerciali</h5>
+              <p class="card-text text-muted">Negozi, showroom e locali pubblici progettati per accogliere e
+                raccontare il tuo brand.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border text-center p-2">
+            <div class="card-body">
+              <div class="display-4 mb-3">🏗️</div>
+              <h5 class="card-title fw-bold">Direzione lavori</h5>
+              <p class="card-text text-muted">Controllo di tempi, costi e qualità in cantiere, fino al collaudo
+                finale.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="lavori"
+      class=" bg-light d-flex flex-column justify-content-center align-items-center align-content-center px-5">
+      <div class="text-center mt-5 mb-4">
+        <h2 class="fw-bold mb-2">Progetti selezionati</h2>
+        <p class="text-muted">Una selezione dei nostri lavori più recenti.</p>
+      </div>
+      <div class="card-grid row g-4 mb-5">
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border overflow-hidden">
+            <img src="assets/img/works.jpg" class="card-img-top" alt="Villa Aurora">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Villa Litta</h5>
+              <p class="card-text text-muted mb-1">Progettazione residenziale</p>
+              <p class="card-text text-muted mb-1">2024</p>
+              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
+                data-bs-target="#myModal">Dettagli</button>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border overflow-hidden">
+            <img src="assets/img/works.jpg" class="card-img-top" alt="Loft Navigli">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Loft Navigli</h5>
+              <p class="card-text text-muted mb-1">Interior design</p>
+              <p class="card-text text-muted mb-1">2023</p>
+              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
+                data-bs-target="#myModal">Dettagli</button>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border overflow-hidden">
+            <img src="assets/img/works.jpg" class="card-img-top" alt="Casa Colonica">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Residence Stella</h5>
+              <p class="card-text text-muted mb-1">Ristrutturazione</p>
+              <p class="card-text text-muted mb-1">2023</p>
+              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
+                data-bs-target="#myModal">Dettagli</button>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border overflow-hidden">
+            <img src="assets/img/works.jpg" class="card-img-top" alt="Giardino Sospeso">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Giardino Sospeso</h5>
+              <p class="card-text text-muted mb-1">Progettazione del verde</p>
+              <p class="card-text text-muted mb-1">2022</p>
+              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
+                data-bs-target="#myModal">Dettagli</button>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border overflow-hidden">
+            <img src="assets/img/works.jpg" class="card-img-top" alt="Showroom Linea">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Showroom Ford</h5>
+              <p class="card-text text-muted mb-1">Spazi commerciali</p>
+              <p class="card-text text-muted mb-1">2024</p>
+              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
+                data-bs-target="#myModal">Dettagli</button>
+            </div>
+          </div>
+        </article>
+        <article class="card-container col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border overflow-hidden">
+            <img src="assets/img/works.jpg" class="card-img-top" alt="Residenze Lago">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Residenze Lago</h5>
+              <p class="card-text text-muted mb-1">Direzione lavori</p>
+              <p class="card-text text-muted mb-1">2022</p>
+              <button type="button" class="dettagli border-0 btn mt-2 w-100 text-white" data-bs-toggle="modal"
+                data-bs-target="#myModal">Dettagli</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contatti">
+    </section>
+  </main>
+
+  <footer class="text-white py-3 position-relative bottom-0 w-100">
+    <div class="container d-flex flex-column justify-content-center mt-2">
+      <div class="row justify-content-between text-center border-bottom border-light py-2">
+        <div class="col-md-4 d-flex flex-column my-3 align-items-center align-items-md-start p-0">
+          <h4 class="fs-5 fw-bold mb-2">Atelier</h4>
+          <p class="text-white mb-1">Studio di architettura</p>
+          <p class="text-white mb-1">Via dei Pioppi 12, Milano</p>
+        </div>
+        <div class="col-md-4 d-flex flex-column my-3 align-items-center align-items-md-start p-0">
+          <h4 class="fs-5 fw-bold mb-2">Link</h4>
+          <a href="#studio" class="footer-link text-white mb-1">Studio</a>
+          <a href="#servizi" class="footer-link text-white mb-1">Servizi</a>
+          <a href="#lavori" class="footer-link text-white mb-1">Lavori</a>
+          <a href="#contatti" class="footer-link text-white mb-1">Contatti</a>
+        </div>
+        <div class="col-md-4 d-flex flex-column my-3 align-items-center align-items-md-start p-0">
+          <h4 class="fs-5 fw-bold mb-2">Contatti</h4>
+          <a class="text-white mb-1 text-decoration-none">info@atelier.example</a>
+          <p class="text-white mb-1">+39 02 0000 1111</p>
+        </div>
+      </div>
+      <div class="text-center my-4">
+        <p class="m-0">© 2026 Atelier - Tutti i diritti riservati</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+/* Keyframes */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Html */
+
+html {
+    scroll-padding-top: 60px;
+}
+
+/* Header */
+
+header {
+    background-color: hsl(20, 20%, 15%);
+}
+
+/* Studio */
+
+#studio,
+#studio .carousel-inner,
+#studio .carousel-item {
+    height: 80vh;
+}
+
+.apri-contatti {
+    transition: all 300ms ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.first-item,
+.first-item .apri-contatti {
+    background-color: hsl(20, 30%, 25%);
+}
+
+.second-item,
+.second-item .apri-contatti {
+    background-color: hsl(20, 20%, 15%);
+}
+
+.third-item,
+.third-item .apri-contatti {
+    background-color: rgb(20, 23, 26);
+}
+
+.first-item .apri-contatti:hover {
+    background-color: hsl(20, 30%, 20%) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4) !important;
+}
+
+.second-item .apri-contatti:hover {
+    background-color: hsl(20, 20%, 10%) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4) !important;
+}
+
+.third-item .apri-contatti:hover {
+    background-color: rgb(15, 15, 15) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Card */
+
+.card-container {
+    animation: fade-in 500ms ease-out;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition:
+        box-shadow 300ms ease-out,
+        transform 300ms ease-out;
+}
+
+.card:hover {
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    transform: translate(-4px);
+}
+
+.card-grid .card-container:nth-of-type(1) {
+    animation-delay: 60ms;
+}
+
+.card-grid .card-container:nth-of-type(2) {
+    animation-delay: 120ms;
+}
+
+.card-grid .card-container:nth-of-type(3) {
+    animation-delay: 180ms;
+}
+
+.card-grid .card-container:nth-of-type(4) {
+    animation-delay: 240ms;
+}
+
+.card-grid .card-container:nth-of-type(5) {
+    animation-delay: 300ms;
+}
+
+.card-grid .card-container:nth-of-type(6) {
+    animation-delay: 360ms;
+}
+
+.dettagli {
+    background-color: hsl(20, 20%, 15%);
+}
+
+.dettagli:hover {
+    background-color: hsl(20, 20%, 10%) !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: hsl(20, 20%, 15%);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
